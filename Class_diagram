@@ -1,0 +1,25 @@
+@startuml
+class AEngine {
++ void forward(int time_ms)
++ void right(int time_ms)
++ void left(int time_ms)
++ void stop()
+}
+
+class FooEngine 
+
+class ACmdReceiver {
++ string recieve()
+}
+
+class FooCmdReceiver
+
+class ControlSystem {
++ void run()
+}
+
+AEngine --|> FooEngine
+ACmdReceiver --|> FooCmdReceiver
+ControlSystem --* FooEngine
+ControlSystem --* FooCmdReceiver
+@enduml
