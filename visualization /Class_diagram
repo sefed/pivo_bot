@@ -18,8 +18,8 @@ class ControlSystem {
 + void run()
 }
 
-AEngine --|> FooEngine
-ACmdReceiver --|> FooCmdReceiver
+AEngine --> FooEngine
+ACmdReceiver --> FooCmdReceiver
 ControlSystem --* FooEngine
 ControlSystem --* FooCmdReceiver
 @enduml
